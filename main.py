@@ -9,7 +9,7 @@ def main():
     parser.add_argument('ip', help='IP address of device to check', type=str)
     parser.add_argument('-p', '--ports', nargs=2, type=int,
                         help='Ports range to scan')
-    parser.add_argument('-u',  '--udp', help='Use flag to check using UDP',
+    parser.add_argument('-u',  '--udp', help='Use this to check ports via UDP',
                         action='store_true')
     parser.add_argument('-t', '--tcp', help='Use this to check ports via TCP',
                         action='store_true')
