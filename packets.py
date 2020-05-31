@@ -15,7 +15,7 @@ class TestPackets:
         self.udp = [self.dns]
 
     def get_protocol(self, response):
-        if response.startswith(b'HTTP'):
+        if b'HTTP' in response:
             return '\'HTTP\''
         elif response.startswith(b'+'):
             return '\'POP3\''
